@@ -1,0 +1,289 @@
+{
+  "basic_example": {
+    "description": "Basic preload configuration with essential fields only",
+    "config": {
+      "study_name": "HMC3 treated with Neurotransmitter",
+      "therapeutic_area": "NEU",
+      "species": "Homo sapiens",
+      "main_comparison": "Treatment",
+      "token_ct": "example_token_123",
+      "analyst": "timo.lange@abbvie.com",
+      "number_of_samples": 5
+    }
+  },
+  
+  "gene_modulation_study": {
+    "description": "Comprehensive preload for gene modulation studies",
+    "config": {
+      "study_name": "APOE Knockout Study in iPSC-derived Neurons",
+      "therapeutic_area": "Neuroscience",
+      "species": "Homo sapiens",
+      "main_comparison": "APOE KO vs Control",
+      "token_ct": "gene_study_token_456",
+      "analyst": "researcher@abbvie.com",
+      "number_of_samples": 24,
+      
+      "category_selection": "Disease indication",
+      "main_question": "Changes introduced by gene modulation",
+      "trait_type_selection": "Gene impact",
+      "experiment_type": "in vitro",
+      "data_source": "Internal",
+      "effect_type": "knock out",
+      "target_known": "target known",
+      "effect_known": "Yes",
+      "is_ipsc_derived": true,
+      
+      "trait_details": "CRISPR-mediated knockout of APOE gene",
+      "strain": "Not applicable (human iPSC)",
+      "data_generated_by": "Lab Technician A",
+      "data_source_link": "",
+      "cell_info_2": ["BMWi iNGN2_telencephalic", "dSMADi_cortical excitatory"],
+      
+      "CDM_meta": {
+        "trait": "APOE knockout",
+        "trait_type": "Gene impact",
+        "trait_details": "Complete knockout using CRISPR/Cas9 system",
+        "disease": "Alzheimer's Disease",
+        "pheno": null,
+        "therapeutic": "Neuroscience",
+        "cell": "Neuron",
+        "line": "iPSC-derived neuronal cells",
+        "tissue": "Brain tissue equivalent",
+        "platform_instrument": "10X Genomics Chromium",
+        "strain": "Not applicable",
+        "protocol": "BMWi differentiation protocol"
+      },
+      
+      "multiple_selections": {
+        "multiple_gene": ["APOE", "TREM2"],
+        "multiple_cell": ["Neuron", "Microglia"],
+        "multiple_disease": ["Alzheimer's Disease"],
+        "multiple_treat": null,
+        "multiple_tissue": null,
+        "multiple_pheno": null,
+        "multiple_therapeutic": null,
+        "multiple_line": null
+      },
+      
+      "confirmation_states": {
+        "user_confirmation": true,
+        "user_confirmation_2nd_layer": true,
+        "user_confirmation_3rd_layer": true,
+        "user_confirmation_4th_layer": false
+      }
+    }
+  },
+  
+  "compound_treatment_study": {
+    "description": "Preload configuration for compound treatment studies",
+    "config": {
+      "study_name": "Novel Compound X Treatment in HMC3 Cells",
+      "therapeutic_area": "Neuroscience",
+      "species": "Homo sapiens",
+      "main_comparison": "Compound X vs Vehicle Control",
+      "token_ct": "compound_study_token_789",
+      "analyst": "compound.researcher@abbvie.com",
+      "number_of_samples": 18,
+      
+      "category_selection": "Disease indication",
+      "main_question": "Changes introduced by compound/antibody treatment (does not include treatment to introduce a disease phenotype)",
+      "trait_type_selection": "Treatment",
+      "experiment_type": "in vitro",
+      "data_source": "Internal",
+      "effect_type": "inhibition",
+      "target_known": "target known",
+      "effect_known": "Yes",
+      "is_ipsc_derived": false,
+      
+      "trait_details": "A-123456 compound treatment at 10μM concentration",
+      "strain": "Not applicable",
+      "data_generated_by": "Compound Screening Team",
+      "data_source_link": "",
+      
+      "CDM_meta": {
+        "trait": "Compound X inhibition",
+        "trait_type": "Treatment",
+        "trait_details": "A-123456 at 10μM for 24h treatment",
+        "disease": "Neurodegeneration",
+        "pheno": null,
+        "therapeutic": "Neuroscience",
+        "cell": "Microglia",
+        "line": "HMC3",
+        "tissue": "Brain-derived cell line",
+        "platform_instrument": "Illumina NovaSeq",
+        "strain": "Not applicable",
+        "protocol": "Standard cell culture protocol"
+      },
+      
+      "multiple_selections": {
+        "multiple_gene": ["TARGET_GENE1"],
+        "multiple_cell": ["Microglia"],
+        "multiple_disease": ["Neurodegeneration"],
+        "multiple_treat": ["A-123456", "Vehicle Control"],
+        "multiple_tissue": null,
+        "multiple_pheno": null,
+        "multiple_therapeutic": null,
+        "multiple_line": null
+      },
+      
+      "confirmation_states": {
+        "user_confirmation": true,
+        "user_confirmation_2nd_layer": true,
+        "user_confirmation_3rd_layer": true,
+        "user_confirmation_4th_layer": true
+      }
+    }
+  },
+  
+  "disease_model_study": {
+    "description": "Preload configuration for disease model studies",
+    "config": {
+      "study_name": "AD Mouse Model Transcriptomic Analysis",
+      "therapeutic_area": "Neuroscience",
+      "species": "Mus musculus",
+      "main_comparison": "AD Model vs Wild Type",
+      "token_ct": "disease_model_token_101",
+      "analyst": "disease.researcher@abbvie.com",
+      "number_of_samples": 32,
+      
+      "category_selection": "Disease indication",
+      "main_question": "Changes introduced by disease status only",
+      "trait_type_selection": "Disease",
+      "experiment_type": "in vivo",
+      "data_source": "Internal",
+      "is_ipsc_derived": false,
+      
+      "trait_details": "5xFAD transgenic mouse model at 6 months of age",
+      "strain": "C57BL/6J background",
+      "data_generated_by": "In Vivo Studies Team",
+      "data_source_link": "",
+      
+      "CDM_meta": {
+        "trait": "Alzheimer's Disease pathology",
+        "trait_type": "Disease",
+        "trait_details": "5xFAD transgenic model with amyloid pathology",
+        "disease": "Alzheimer's Disease",
+        "pheno": null,
+        "therapeutic": "Neuroscience",
+        "cell": null,
+        "line": null,
+        "tissue": "Hippocampus",
+        "platform_instrument": "Illumina HiSeq",
+        "strain": "C57BL/6J",
+        "protocol": "Standard tissue extraction protocol"
+      },
+      
+      "multiple_selections": {
+        "multiple_gene": null,
+        "multiple_cell": null,
+        "multiple_disease": ["Alzheimer's Disease"],
+        "multiple_treat": null,
+        "multiple_tissue": ["Hippocampus", "Cortex"],
+        "multiple_pheno": null,
+        "multiple_therapeutic": null,
+        "multiple_line": null
+      },
+      
+      "confirmation_states": {
+        "user_confirmation": true,
+        "user_confirmation_2nd_layer": false,
+        "user_confirmation_3rd_layer": true,
+        "user_confirmation_4th_layer": true
+      }
+    }
+  },
+  
+  "model_characterization_study": {
+    "description": "Preload configuration for model system characterization",
+    "config": {
+      "study_name": "iPSC-derived Neuron Characterization Panel",
+      "therapeutic_area": "Platform Development",
+      "species": "Homo sapiens",
+      "main_comparison": "Different Differentiation Protocols",
+      "token_ct": "characterization_token_202",
+      "analyst": "platform.scientist@abbvie.com",
+      "number_of_samples": 48,
+      
+      "category_selection": "None (e.g. only model test)",
+      "main_question": "Changes observed for model system characterization",
+      "trait_type_selection": "model characterization",
+      "model_type": "protocol",
+      "experiment_type": "in vitro",
+      "data_source": "Internal",
+      "is_ipsc_derived": true,
+      
+      "trait_details": "Comparison of different neuronal differentiation protocols",
+      "strain": "Not applicable",
+      "data_generated_by": "Platform Development Team",
+      "data_source_link": "",
+      "cell_info_2": ["iNGN2", "BMWi iNGN2_telencephalic", "dSMADi_cortical excitatory", "dSMADi_motor"],
+      
+      "CDM_meta": {
+        "trait": "protocol",
+        "trait_type": "model characterization",
+        "trait_details": "Systematic comparison of neuronal differentiation protocols",
+        "disease": null,
+        "pheno": null,
+        "therapeutic": null,
+        "cell": "Neuron",
+        "line": "Multiple iPSC lines",
+        "tissue": "iPSC-derived neural tissue",
+        "platform_instrument": "10X Genomics Chromium",
+        "strain": "Not applicable",
+        "protocol": "Multiple protocols compared"
+      },
+      
+      "multiple_selections": {
+        "multiple_gene": null,
+        "multiple_cell": ["Neuron", "Neural Progenitor"],
+        "multiple_disease": null,
+        "multiple_treat": null,
+        "multiple_tissue": null,
+        "multiple_pheno": null,
+        "multiple_therapeutic": null,
+        "multiple_line": ["iPSC Line 1", "iPSC Line 2", "iPSC Line 3"]
+      },
+      
+      "confirmation_states": {
+        "user_confirmation": false,
+        "user_confirmation_2nd_layer": true,
+        "user_confirmation_3rd_layer": true,
+        "user_confirmation_4th_layer": true
+      }
+    }
+  },
+  
+  "partial_preload_example": {
+    "description": "Example of partial preload with only essential fields",
+    "config": {
+      "study_name": "Partial Preload Example",
+      "species": "Mus musculus",
+      "analyst": "partial.user@abbvie.com",
+      "category_selection": "Therapeutic area",
+      "experiment_type": "in vivo",
+      "user_confirmation": false
+    }
+  },
+  
+  "lab_default_template": {
+    "description": "Template with common lab defaults that can be extended",
+    "config": {
+      "analyst": "lab.default@abbvie.com",
+      "data_source": "Internal",
+      "experiment_type": "in vitro",
+      "species": "Homo sapiens",
+      "therapeutic_area": "Neuroscience",
+      "token_ct": "lab_default_token",
+      
+      "CDM_meta": {
+        "platform_instrument": "10X Genomics Chromium",
+        "therapeutic": "Neuroscience"
+      },
+      
+      "confirmation_states": {
+        "user_confirmation": true
+      }
+    }
+  }
+}
+

@@ -1,0 +1,21 @@
+# Environment variables for ARTEMIS Enhanced Metadata Collection
+# This file contains configuration for the enhanced preload functionality
+
+# API Token for ontology services (mock for demonstration)
+API_TOKEN=demo_token_12345
+
+# Default configuration values
+DEFAULT_ANALYST=demo.user@company.com
+DEFAULT_DATA_SOURCE=Internal
+DEFAULT_SPECIES=Homo sapiens
+DEFAULT_THERAPEUTIC_AREA=Neuroscience
+
+# Preload system configuration
+PRELOAD_VERSION=1.0.0
+PRELOAD_VALIDATION_ENABLED=TRUE
+PRELOAD_PERFORMANCE_MONITORING=TRUE
+
+# Demo application settings
+DEMO_MODE=TRUE
+MOCK_ONTOLOGY_SERVICES=TRUE
+
